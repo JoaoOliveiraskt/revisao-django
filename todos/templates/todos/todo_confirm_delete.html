@@ -1,0 +1,7 @@
+<h1>Deletar Tarefa</h1>
+<p>Você tem certeza que deseja deletar a tarefa?</p>
+<form method="POST">
+  {% csrf_token %}
+  <button type="submit">Deletar</button>
+</form>
+<a href="{% url 'todo_list' %}">Cancelar</a>
